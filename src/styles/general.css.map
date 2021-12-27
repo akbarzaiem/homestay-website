@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "ACAA,OAAO,CAAC,yFAAI;ADGZ,AAAA,IAAI,CAAA;EACA,WAAW,EAAE,gCAAgC;CAChD",
+    "sources": [
+        "general.scss",
+        "_fonts.scss",
+        "_color.scss",
+        "_variable-breakpoints.scss"
+    ],
+    "names": [],
+    "file": "general.css"
+}

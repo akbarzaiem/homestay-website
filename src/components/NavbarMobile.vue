@@ -1,0 +1,94 @@
+<template>
+  <nav
+    class="navbar navbar-expand-lg fixed-bottom"
+    style="background-color: #505050"
+  >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <div class="navbar-brand">
+      <div class="row">
+        <div class="col-4 col-sm-4 d-flex justify-content-center">
+          <router-link to="/facilities" class="routerlink"
+            ><img :src="bed" alt="icon3" class="icon"
+          /></router-link>
+        </div>
+        <div class="col-4 col-sm-4 d-flex justify-content-center">
+          <router-link to="/tour" class="routerlink"
+            ><img :src="sunset" alt="icon3" class="icon"
+          /></router-link>
+        </div>
+        <div class="col-4 col-sm-4 d-flex justify-content-center">
+          <router-link to="/contact" class="routerlink"
+            ><img :src="phone" alt="icon3" class="icon"
+          /></router-link>
+        </div>
+        <!-- <div class="w-100"></div>
+        <div class="col-4 col-sm-4 text d-flex justify-content-center">
+          <router-link to="/facilities" class="routerlink"
+            >Facility</router-link
+          >
+        </div>
+        <div class="col-4 col-sm-4 text d-flex justify-content-center">
+          <router-link to="/tour" class="routerlink">Nearest Tour</router-link>
+        </div>
+        <div class="col-4 col-sm-4 text d-flex justify-content-center">
+          <router-link to="/contact" class="routerlink">Contact</router-link>
+        </div> -->
+      </div>
+    </div>
+  </nav>
+</template>
+
+<script>
+export default {
+  name: "NavbarMobile",
+  data() {
+    return {
+      bed: "img/icon/navbar-mobile/bed.png",
+      sunset: "img/icon/navbar-mobile/sunset.png",
+      phone: "img/icon/navbar-mobile/phone-call.png",
+    };
+  },
+};
+</script>
+
+<style lang="sass" scoped>
+@import "../styles/general"
+.navbar
+  background-color: $green-cool !important
+  @media (max-width: map-get($grid-breakpoints, sm) )
+    display: block
+  @media (max-width: map-get($grid-breakpoints, md) )
+    display: block
+  @media (min-width: map-get($grid-breakpoints, lg) )
+    display: none
+
+.navbar-brand
+  margin-right: 0
+  width: 100%
+
+.text
+  font-size: 13px
+
+.routerlink
+  font-weight: 700
+  color: $white
+  text-decoration: none
+  &:hover
+    color: $black
+
+.icon
+  height: 30px
+  margin-bottom: -15px
+  margin-top: -18px
+
+  &:hover
+    opacity: 0.3
+</style>
+
+// attribution icon
+// <div>Icons made by <a href="https://www.flaticon.com/authors/ilham-fitrotul-hayat" title="Ilham Fitrotul Hayat">Ilham Fitrotul Hayat</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+// <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+// <div>Icons made by <a href="https://www.flaticon.com/authors/monkik" title="monkik">monkik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
