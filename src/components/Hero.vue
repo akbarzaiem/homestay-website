@@ -89,7 +89,7 @@ export default {
   @media (max-width: map-get($grid-breakpoints, md) )
     background-image: none
     background-color: $grey
-    height: 150vh
+    height: 110vh
     width: 100vw
     padding: 0
     float: left
