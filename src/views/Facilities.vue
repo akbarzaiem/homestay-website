@@ -42,59 +42,134 @@
           data-aos-easing="ease-in-out"
         >
           <div class="row">
-            <div class="col-12 col-xl-4">
+            <div
+              class="col-12 col-xl-4"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-easing="ease-in-out"
+            >
               <img :src="iconCheck" alt="logo-check" />Kapasitas 6-8 orang
             </div>
-            <div class="col-12 col-xl-4">
+            <div
+              class="col-12 col-xl-4"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-easing="ease-in-out"
+            >
               <img :src="iconCheck" alt="logo-check" />Parkir bisa muat 2 mobil
             </div>
-            <div class="col-12 col-xl-4">
+            <div
+              class="col-12 col-xl-4"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-easing="ease-in-out"
+            >
               <img :src="iconCheck" alt="logo-check" />Teras luas
             </div>
           </div>
           <div class="row">
-            <div class="col-12 col-xl-4">
+            <div
+              class="col-12 col-xl-4"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-easing="ease-in-out"
+            >
               <img :src="iconCheck" alt="logo-check" />Ruang tengah
             </div>
-            <div class="col-12 col-xl-4">
+            <div
+              class="col-12 col-xl-4"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-easing="ease-in-out"
+            >
               <img :src="iconCheck" alt="logo-check" />Ruang dapur dan
               perlatannya
             </div>
-            <div class="col-12 col-xl-4">
+            <div
+              class="col-12 col-xl-4"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-easing="ease-in-out"
+            >
               <img :src="iconCheck" alt="logo-check" />2 kamar tidur
             </div>
           </div>
           <div class="row">
-            <div class="col-12 col-xl-4">
+            <div
+              class="col-12 col-xl-4"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-easing="ease-in-out"
+            >
               <img :src="iconCheck" alt="logo-check" />1 kamar mandi non shower
               dan non panas
             </div>
-            <div class="col-12 col-xl-4">
+            <div
+              class="col-12 col-xl-4"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-easing="ease-in-out"
+            >
               <img :src="iconCheck" alt="logo-check" />Meja Makan
             </div>
-            <div class="col-12 col-xl-4">
+            <div
+              class="col-12 col-xl-4"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-easing="ease-in-out"
+            >
               <img :src="iconCheck" alt="logo-check" />AC
             </div>
           </div>
           <div class="row">
-            <div class="col-12 col-xl-4">
+            <div
+              class="col-12 col-xl-4"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-easing="ease-in-out"
+            >
               <img :src="iconCheck" alt="logo-check" />Kipas angin
             </div>
-            <div class="col-12 col-xl-4">
+            <div
+              class="col-12 col-xl-4"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-easing="ease-in-out"
+            >
               <img :src="iconCheck" alt="logo-check" />TV
             </div>
-            <div class="col-12 col-xl-4">
+            <div
+              class="col-12 col-xl-4"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-easing="ease-in-out"
+            >
               <img :src="iconCheck" alt="logo-check" />Dispenser
             </div>
           </div>
           <div class="row">
-            <div class="col-12 col-xl-4">
+            <div
+              class="col-12 col-xl-4"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-easing="ease-in-out"
+            >
               <img :src="iconCheck" alt="logo-check" />Kulkas
             </div>
-            <div class="col-12 col-xl-4">
+            <div
+              class="col-12 col-xl-4"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-easing="ease-in-out"
+            >
               <img :src="iconCheck" alt="logo-check" />Tambahan 1 bed tidur
             </div>
-            <div class="col-12 col-xl-4">
+            <div
+              class="col-12 col-xl-4"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-easing="ease-in-out"
+            >
               <img :src="iconCheck" alt="logo-check" />Magic com
             </div>
           </div>
@@ -145,7 +220,8 @@ export default {
 .owl-carousel
   .owl-item img
     @media (max-width: map-get($grid-breakpoints, sm) )
-      height: 450px
+      margin-top: 30px
+      height: 325px
 .list
   margin-top: 50px
   h2
