@@ -10,17 +10,17 @@
     <div class="navbar-brand">
       <div class="row">
         <div class="col-4 col-sm-4 d-flex justify-content-center">
-          <router-link to="/facilities" class="routerlink"
+          <router-link to="/facilities" class="routerlink a"
             ><img :src="bed" alt="icon3" class="icon"
           /></router-link>
         </div>
         <div class="col-4 col-sm-4 d-flex justify-content-center">
-          <router-link to="/tour" class="routerlink"
+          <router-link to="/tour" class="routerlink b"
             ><img :src="sunset" alt="icon3" class="icon"
           /></router-link>
         </div>
         <div class="col-4 col-sm-4 d-flex justify-content-center">
-          <router-link to="/contact" class="routerlink"
+          <router-link to="/contact" class="routerlink c"
             ><img :src="phone" alt="icon3" class="icon"
           /></router-link>
         </div>
@@ -69,6 +69,27 @@ export default {
   margin-right: 0
   width: 100%
 
+.routerlink.a.router-link-active
+  .icon
+    content: url('/img/icon/navbar-mobile/bed-active.png')
+    height: 30px
+    margin-bottom: -15px
+    margin-top: -18px
+
+.routerlink.b.router-link-active
+  .icon
+    content: url('/img/icon/navbar-mobile/sunset-active.png')
+    height: 30px
+    margin-bottom: -15px
+    margin-top: -18px
+
+.routerlink.c.router-link-active
+  .icon
+    content: url('/img/icon/navbar-mobile/phone-call-active.png')
+    height: 30px
+    margin-bottom: -15px
+    margin-top: -18px
+
 .text
   font-size: 13px
 
@@ -85,7 +106,7 @@ export default {
   margin-top: -18px
 
   &:hover
-    opacity: 0.3
+    opacity: 0.7
 </style>
 
 // attribution icon
