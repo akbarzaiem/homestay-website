@@ -2,7 +2,7 @@
   <div class="container">
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid">
-        <router-link class="navbar-brand tittle" to="/"
+        <router-link class="navbar-brand tittle" to="/home"
           >Homestay Berbah Syariah Jogja</router-link
         >
         <button
@@ -52,4 +52,6 @@ export default {
   background-image: linear-gradient(#360033, #0b8793)
   -webkit-background-clip: text
   -webkit-text-fill-color: transparent
+a.router-link-active
+  border-bottom: 5px solid $green-young
 </style>
