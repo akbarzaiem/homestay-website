@@ -58,6 +58,7 @@ export default {
 @import "../styles/general"
 .navbar
   background-color: $green-cool !important
+  border-radius: 25px 25px 0 0
   @media (max-width: map-get($grid-breakpoints, sm) )
     display: block
   @media (max-width: map-get($grid-breakpoints, md) )
