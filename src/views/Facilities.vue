@@ -14,18 +14,12 @@
         :autoplaySpeed="1000"
         :loop="true"
       >
-        <img class="image-homestay" :src="photo11" />
-        <img class="image-homestay" :src="photo12" />
-        <img class="image-homestay" :src="photo1" />
-        <img class="image-homestay" :src="photo2" />
-        <img class="image-homestay" :src="photo3" />
-        <img class="image-homestay" :src="photo4" />
-        <img class="image-homestay" :src="photo5" />
-        <img class="image-homestay" :src="photo6" />
-        <img class="image-homestay" :src="photo7" />
-        <img class="image-homestay" :src="photo8" />
-        <img class="image-homestay" :src="photo9" />
-        <img class="image-homestay" :src="photo10" />
+        <img
+          class="image-homestay"
+          v-for="items in photos"
+          :key="items.no"
+          :src="items.photo"
+        />
       </carousel>
       <div class="container list">
         <h2
@@ -43,134 +37,14 @@
         >
           <div class="row">
             <div
-              class="col-12 col-xl-4"
+              v-for="items in facility"
+              :key="items.no"
+              class="col-12 col-xl-4 pr-2"
               data-aos="fade-up"
               data-aos-duration="1500"
               data-aos-easing="ease-in-out"
             >
-              <img :src="iconCheck" alt="logo-check" />Kapasitas 6-8 orang
-            </div>
-            <div
-              class="col-12 col-xl-4"
-              data-aos="fade-up"
-              data-aos-duration="1500"
-              data-aos-easing="ease-in-out"
-            >
-              <img :src="iconCheck" alt="logo-check" />Parkir bisa muat 2 mobil
-            </div>
-            <div
-              class="col-12 col-xl-4"
-              data-aos="fade-up"
-              data-aos-duration="1500"
-              data-aos-easing="ease-in-out"
-            >
-              <img :src="iconCheck" alt="logo-check" />Teras luas
-            </div>
-          </div>
-          <div class="row">
-            <div
-              class="col-12 col-xl-4"
-              data-aos="fade-up"
-              data-aos-duration="1500"
-              data-aos-easing="ease-in-out"
-            >
-              <img :src="iconCheck" alt="logo-check" />Ruang tengah
-            </div>
-            <div
-              class="col-12 col-xl-4"
-              data-aos="fade-up"
-              data-aos-duration="1500"
-              data-aos-easing="ease-in-out"
-            >
-              <img :src="iconCheck" alt="logo-check" />Ruang dapur dan
-              perlatannya
-            </div>
-            <div
-              class="col-12 col-xl-4"
-              data-aos="fade-up"
-              data-aos-duration="1500"
-              data-aos-easing="ease-in-out"
-            >
-              <img :src="iconCheck" alt="logo-check" />2 kamar tidur
-            </div>
-          </div>
-          <div class="row">
-            <div
-              class="col-12 col-xl-4"
-              data-aos="fade-up"
-              data-aos-duration="1500"
-              data-aos-easing="ease-in-out"
-            >
-              <img :src="iconCheck" alt="logo-check" />1 kamar mandi non shower
-              dan non panas
-            </div>
-            <div
-              class="col-12 col-xl-4"
-              data-aos="fade-up"
-              data-aos-duration="1500"
-              data-aos-easing="ease-in-out"
-            >
-              <img :src="iconCheck" alt="logo-check" />Meja Makan
-            </div>
-            <div
-              class="col-12 col-xl-4"
-              data-aos="fade-up"
-              data-aos-duration="1500"
-              data-aos-easing="ease-in-out"
-            >
-              <img :src="iconCheck" alt="logo-check" />AC
-            </div>
-          </div>
-          <div class="row">
-            <div
-              class="col-12 col-xl-4"
-              data-aos="fade-up"
-              data-aos-duration="1500"
-              data-aos-easing="ease-in-out"
-            >
-              <img :src="iconCheck" alt="logo-check" />Kipas angin
-            </div>
-            <div
-              class="col-12 col-xl-4"
-              data-aos="fade-up"
-              data-aos-duration="1500"
-              data-aos-easing="ease-in-out"
-            >
-              <img :src="iconCheck" alt="logo-check" />TV
-            </div>
-            <div
-              class="col-12 col-xl-4"
-              data-aos="fade-up"
-              data-aos-duration="1500"
-              data-aos-easing="ease-in-out"
-            >
-              <img :src="iconCheck" alt="logo-check" />Dispenser
-            </div>
-          </div>
-          <div class="row">
-            <div
-              class="col-12 col-xl-4"
-              data-aos="fade-up"
-              data-aos-duration="1500"
-              data-aos-easing="ease-in-out"
-            >
-              <img :src="iconCheck" alt="logo-check" />Kulkas
-            </div>
-            <div
-              class="col-12 col-xl-4"
-              data-aos="fade-up"
-              data-aos-duration="1500"
-              data-aos-easing="ease-in-out"
-            >
-              <img :src="iconCheck" alt="logo-check" />Tambahan 1 bed tidur
-            </div>
-            <div
-              class="col-12 col-xl-4"
-              data-aos="fade-up"
-              data-aos-duration="1500"
-              data-aos-easing="ease-in-out"
-            >
-              <img :src="iconCheck" alt="logo-check" />Magic com
+              <img :src="iconCheck" alt="logo-check" />{{ items.list }}
             </div>
           </div>
         </div>
@@ -197,19 +71,38 @@ export default {
   },
   data() {
     return {
-      photo1: "img/photo-homestay/11.jpg",
-      photo2: "img/photo-homestay/12.jpg",
-      photo3: "img/photo-homestay/13.jpg",
-      photo4: "img/photo-homestay/14.jpg",
-      photo5: "img/photo-homestay/15.jpg",
-      photo6: "img/photo-homestay/16.jpg",
-      photo7: "img/photo-homestay/17.jpg",
-      photo8: "img/photo-homestay/18.jpg",
-      photo9: "img/photo-homestay/19.jpg",
-      photo10: "img/photo-homestay/20.jpg",
-      photo11: "img/photo-homestay/21.jpg",
-      photo12: "img/photo-homestay/22.jpg",
+      photos: [
+        { no: 1, photo: "img/photo-homestay/21.jpg" },
+        { no: 2, photo: "img/photo-homestay/22.jpg" },
+        { no: 3, photo: "img/photo-homestay/11.jpg" },
+        { no: 4, photo: "img/photo-homestay/12.jpg" },
+        { no: 5, photo: "img/photo-homestay/13.jpg" },
+        { no: 6, photo: "img/photo-homestay/14.jpg" },
+        { no: 7, photo: "img/photo-homestay/15.jpg" },
+        { no: 8, photo: "img/photo-homestay/16.jpg" },
+        { no: 9, photo: "img/photo-homestay/17.jpg" },
+        { no: 10, photo: "img/photo-homestay/18.jpg" },
+        { no: 11, photo: "img/photo-homestay/19.jpg" },
+        { no: 12, photo: "img/photo-homestay/20.jpg" },
+      ],
       iconCheck: "img/icon/check.svg",
+      facility: [
+        { no: 1, list: "Kapasitas 6-8 orang" },
+        { no: 2, list: "Parkir bisa muat 2 mobil" },
+        { no: 3, list: "Teras luas" },
+        { no: 4, list: "Ruang tengah" },
+        { no: 5, list: "Ruang dapur dan peralatannya" },
+        { no: 6, list: "2 kamar tidur" },
+        { no: 7, list: "1 kamar mandi non shower dan non panas" },
+        { no: 8, list: "Meja Makan" },
+        { no: 9, list: "AC" },
+        { no: 10, list: "Kipas angin" },
+        { no: 11, list: "TV" },
+        { no: 12, list: "Dispenser" },
+        { no: 13, list: "Kulkas" },
+        { no: 14, list: "Tambahan 1 bed tidur" },
+        { no: 15, list: "Magic com" },
+      ],
     };
   },
 };
@@ -230,6 +123,5 @@ export default {
   .big
     margin-bottom: 50px
     .row
-      max-width: 90%
       font-weight: map-get($font-weight, medium )
 </style>
