@@ -11,135 +11,33 @@
       </h2>
       <div class="row">
         <div
-          class="col d-flex justify-content-center"
+          class="col col-xl-4 d-flex justify-content-center mb-5"
+          v-for="item in items"
+          :key="item.number"
           data-aos="zoom-in"
           data-aos-duration="1500"
           data-aos-easing="ease-in-out"
         >
           <div class="card" style="width: 18rem">
-            <img src="../assets/hero.jpg" class="card-img-top" alt="image" />
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
+              <h5 class="card-title">{{ item.tittle }}</h5>
+              <p class="card-text">{{ item.message }}</p>
             </div>
             <ul class="list-group list-group-flush">
-              <li class="list-group-item">
-                <a href="#" class="card-link">Card link</a>
+              <li class="list-group-item" v-if="item.instagram">
+                <a :href="item.instagram" target="_blank" class="card-link">
+                  <img
+                    src="img/icon/instagram.png"
+                    alt="map-icon"
+                    height="24"
+                  />
+                  Instagram
+                </a>
               </li>
-            </ul>
-          </div>
-        </div>
-        <div
-          class="col d-flex justify-content-center"
-          data-aos="zoom-in"
-          data-aos-duration="1500"
-          data-aos-easing="ease-in-out"
-        >
-          <div class="card" style="width: 18rem">
-            <img src="../assets/hero.jpg" class="card-img-top" alt="image" />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-            </div>
-            <ul class="list-group list-group-flush">
               <li class="list-group-item">
-                <a href="#" class="card-link">Card link</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div
-          class="col d-flex justify-content-center"
-          data-aos="zoom-in"
-          data-aos-duration="1500"
-          data-aos-easing="ease-in-out"
-        >
-          <div class="card" style="width: 18rem">
-            <img src="../assets/hero.jpg" class="card-img-top" alt="image" />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">
-                <a href="#" class="card-link">Card link</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div
-          class="col d-flex justify-content-center"
-          data-aos="zoom-in"
-          data-aos-duration="1500"
-          data-aos-easing="ease-in-out"
-        >
-          <div class="card" style="width: 18rem">
-            <img src="../assets/hero.jpg" class="card-img-top" alt="image" />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">
-                <a href="#" class="card-link">Card link</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div
-          class="col d-flex justify-content-center"
-          data-aos="zoom-in"
-          data-aos-duration="1500"
-          data-aos-easing="ease-in-out"
-        >
-          <div class="card" style="width: 18rem">
-            <img src="../assets/hero.jpg" class="card-img-top" alt="image" />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">
-                <a href="#" class="card-link">Card link</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div
-          class="col d-flex justify-content-center"
-          data-aos="zoom-in"
-          data-aos-duration="1500"
-          data-aos-easing="ease-in-out"
-        >
-          <div class="card" style="width: 18rem">
-            <img src="../assets/hero.jpg" class="card-img-top" alt="image" />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">
-                <a href="#" class="card-link">Card link</a>
+                <a :href="item.map" target="_blank" class="card-link">
+                  <img src="img/icon/map.png" alt="map-icon" height="24" /> Maps
+                </a>
               </li>
             </ul>
           </div>
@@ -162,6 +60,41 @@ export default {
     Footer,
     NavbarMobile,
   },
+  data() {
+    return {
+      items: [
+        {
+          number: 1,
+          tittle: "Heha Sky View",
+          message:
+            "Salah satu destinasi wisata favorit yang menawarkan pemandangan terbaik kota Yogyakarta dan sekitarnya “dari lantai 2”. Terletak di kawasan perbukitan Gunung Kidul.",
+          instagram: "https://www.instagram.com/hehaskyview/",
+          map: "https://g.page/hehaskyview?share",
+        },
+        {
+          number: 2,
+          tittle: "Malioboro",
+          message:
+            "Belum lengkap rasanya bila ke Jogja tanpa ke malioboro. Suatu destinasi yang terletak di jantung kota Yogyakarta dengan ciri khas pedestriannya ",
+          map: "https://g.page/malioboro-jogja?share",
+        },
+        {
+          number: 3,
+          tittle: "Pantai Parangtritis",
+          message:
+            "Salah satu pantai ikonik Yogyakarta, yang terletak di wilayah Bantul.",
+          map: "https://goo.gl/maps/4qJuV4k7bC9LfLrK9",
+        },
+        {
+          number: 4,
+          tittle: "Candi Prambanan",
+          message:
+            "Kompleks candi hindu terbesar di Indonesia dibangun sekitar abad ke-9 dengan struktur batu atas meruncing & patung.",
+          map: "https://goo.gl/maps/8A5rpT8Pi9ZidHSh8",
+        },
+      ],
+    };
+  },
 };
 </script>
 <style lang="sass" scoped>
@@ -175,4 +108,10 @@ h2
   .col
     @media (max-width: map-get($grid-breakpoints, sm) )
       margin-bottom: 30px
+.card-title
+  text-align: center
+.card-text
+  text-align: justify
 </style>
+
+// <div>Icons made by <a href="https://www.flaticon.com/authors/riajulislam" title="riajulislam">riajulislam</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
