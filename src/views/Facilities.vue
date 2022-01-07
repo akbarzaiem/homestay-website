@@ -4,6 +4,7 @@
 
     <div class="container">
       <carousel
+        v-if="photos"
         data-aos="zoom-in-up"
         data-aos-duration="1500"
         data-aos-easing="ease-in-out"
@@ -21,6 +22,21 @@
           :src="items.photo"
         />
       </carousel>
+      <div class="loading" v-else>
+        <div class="spinner-grow text-success" role="status">
+          <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-grow text-danger" role="status">
+          <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-grow text-warning" role="status">
+          <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-grow text-info" role="status">
+          <span class="sr-only">Loading...</span>
+        </div>
+      </div>
+
       <div class="container list">
         <h2
           data-aos="fade-down"
@@ -115,6 +131,11 @@ export default {
     @media (max-width: map-get($grid-breakpoints, sm) )
       margin-top: 30px
       height: 325px
+.loading
+  left: 50%
+  .spinner-grow
+    margin-top: 20px
+    margin-left: 20px
 .list
   margin-top: 50px
   h2
