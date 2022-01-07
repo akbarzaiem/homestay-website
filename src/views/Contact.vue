@@ -56,9 +56,8 @@ export default {
   },
   data() {
     return {
-      wa: "https://wa.me/6287838164799?text=Saya%20tertarik%20dengan%20homestay%20yang%20anda%20ditawarkan",
+      wa: "https://wa.me/6287838164799?text=Saya%20tertarik%20dengan%20homestay%20yang%20anda%20tawarkan,%20apakah%20dapat%20saya%20booking?",
       maps: "https://maps.app.goo.gl/oomzZ2LgYMLdFYWL7",
-
       waIcon: "img/icon/whatsapp.png",
       mapIcon: "img/icon/map.png",
     };
