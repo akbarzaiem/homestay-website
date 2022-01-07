@@ -75,18 +75,41 @@ export default {
           number: 2,
           tittle: "Malioboro",
           message:
-            "Belum lengkap rasanya bila ke Jogja tanpa ke malioboro. Suatu destinasi yang terletak di jantung kota Yogyakarta dengan ciri khas pedestriannya ",
+            "Belum lengkap rasanya bila ke Jogja tanpa ke Malioboro. Suatu destinasi yang terletak di jantung kota Yogyakarta dengan ciri khas pedestriannya. ",
           map: "https://g.page/malioboro-jogja?share",
         },
         {
           number: 3,
+          tittle: "Tamansari",
+          message:
+            "Sebuah situs bekas taman atau kebun istana Keraton Ngayogyakarta Hadiningrat.",
+          instagram: "https://www.instagram.com/wisata_tamansari_yogyakarta/",
+          map: "https://goo.gl/maps/ARhGvpfTNwHydrk46",
+        },
+        {
+          number: 4,
+          tittle: "Warung Kopi Klotok",
+          message:
+            "Tempat makan dengan nuansa zaman dulu dikelilingi persawahan dan dekat gunung merapi. Menu makanan berupa lodeh tempe lombok ijo, lodeh terong, tahu bacem, tempe garit, dan lain sebagainya. ",
+          instagram: "https://www.instagram.com/kopiklotok/",
+          map: "https://goo.gl/maps/N4z1kUw84EyZe7cK7",
+        },
+        {
+          number: 5,
+          tittle: "Hutan Pinus Mangunan",
+          message:
+            "Nuansa sejuk dari banyaknya pohon pinus serta terdapat panggung pertunjukan, terletak di Dlingo Bantul.",
+          map: "https://goo.gl/maps/gBzMm8XVWFmECgf47",
+        },
+        {
+          number: 6,
           tittle: "Pantai Parangtritis",
           message:
             "Salah satu pantai ikonik Yogyakarta, yang terletak di wilayah Bantul.",
           map: "https://goo.gl/maps/4qJuV4k7bC9LfLrK9",
         },
         {
-          number: 4,
+          number: 7,
           tittle: "Candi Prambanan",
           message:
             "Kompleks candi hindu terbesar di Indonesia dibangun sekitar abad ke-9 dengan struktur batu atas meruncing & patung.",
