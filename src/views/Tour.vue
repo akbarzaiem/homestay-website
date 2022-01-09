@@ -27,7 +27,7 @@
               <li class="list-group-item" v-if="item.instagram">
                 <a :href="item.instagram" target="_blank" class="card-link">
                   <img
-                    src="img/icon/instagram.png"
+                    src="img/icon/instagram.webp"
                     alt="map-icon"
                     height="24"
                   />
@@ -36,7 +36,8 @@
               </li>
               <li class="list-group-item">
                 <a :href="item.map" target="_blank" class="card-link">
-                  <img src="img/icon/map.png" alt="map-icon" height="24" /> Maps
+                  <img src="img/icon/map.webp" alt="map-icon" height="24" />
+                  Maps
                 </a>
               </li>
             </ul>
