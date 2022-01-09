@@ -79,7 +79,7 @@ export default {
     display: flex !important
     float: left !important
 .hero
-  background-image: url("../assets/hero2.jpg")
+  background-image: url("../assets/hero2.webp")
   height: 100vh
   background-repeat: no-repeat
   background-size: cover
