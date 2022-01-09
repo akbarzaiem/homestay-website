@@ -103,7 +103,7 @@ export default {
       font-size: 80px
       // color: $oxford-blue
       line-height: 130%
-      background-image: linear-gradient(#360033, #0b8793)
+      background-image: linear-gradient(#2193b0, #6dd5ed)
       -webkit-background-clip: text
       -webkit-text-fill-color: transparent
       @media (max-width: map-get($grid-breakpoints, md) )
