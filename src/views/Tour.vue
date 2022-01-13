@@ -2,45 +2,47 @@
   <div class="Tour">
     <Navbar />
     <div class="container">
-      <h2
-        data-aos="zoom-in-down"
-        data-aos-duration="1500"
-        data-aos-easing="ease-in-out"
-      >
-        Recommended tourist spots
-      </h2>
-      <div class="row">
-        <div
-          class="col col-xl-4 d-flex justify-content-center mb-5"
-          v-for="item in items"
-          :key="item.number"
-          data-aos="zoom-in"
+      <div class="container d-flex flex-column min-vh-100">
+        <h2
+          data-aos="zoom-in-down"
           data-aos-duration="1500"
           data-aos-easing="ease-in-out"
         >
-          <div class="card" style="width: 18rem">
-            <div class="card-body">
-              <h5 class="card-title">{{ item.tittle }}</h5>
-              <p class="card-text">{{ item.message }}</p>
+          Recommended tourist spots
+        </h2>
+        <div class="row">
+          <div
+            class="col col-xl-4 d-flex justify-content-center mb-5"
+            v-for="item in items"
+            :key="item.number"
+            data-aos="zoom-in"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out"
+          >
+            <div class="card" style="width: 18rem">
+              <div class="card-body">
+                <h5 class="card-title">{{ item.tittle }}</h5>
+                <p class="card-text">{{ item.message }}</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item" v-if="item.instagram">
+                  <a :href="item.instagram" target="_blank" class="card-link">
+                    <img
+                      src="img/icon/instagram.webp"
+                      alt="map-icon"
+                      height="24"
+                    />
+                    Instagram
+                  </a>
+                </li>
+                <li class="list-group-item">
+                  <a :href="item.map" target="_blank" class="card-link">
+                    <img src="img/icon/map.webp" alt="map-icon" height="24" />
+                    Maps
+                  </a>
+                </li>
+              </ul>
             </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item" v-if="item.instagram">
-                <a :href="item.instagram" target="_blank" class="card-link">
-                  <img
-                    src="img/icon/instagram.webp"
-                    alt="map-icon"
-                    height="24"
-                  />
-                  Instagram
-                </a>
-              </li>
-              <li class="list-group-item">
-                <a :href="item.map" target="_blank" class="card-link">
-                  <img src="img/icon/map.webp" alt="map-icon" height="24" />
-                  Maps
-                </a>
-              </li>
-            </ul>
           </div>
         </div>
       </div>

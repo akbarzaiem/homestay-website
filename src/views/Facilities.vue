@@ -1,50 +1,51 @@
 <template>
   <div class="facilities">
     <Navbar />
-
     <div class="container">
-      <carousel
-        data-aos="zoom-in-up"
-        data-aos-duration="1500"
-        data-aos-easing="ease-in-out"
-        :items="1"
-        s
-        :nav="false"
-        :autoplay="true"
-        :autoplaySpeed="1000"
-        :loop="true"
-      >
-        <img
-          class="image-homestay"
-          v-for="items in photos"
-          :key="items.no"
-          :src="items.photo"
-        />
-      </carousel>
-      <div class="container list">
-        <h2
-          data-aos="fade-down"
+      <div class="container d-flex flex-column min-vh-100">
+        <carousel
+          data-aos="zoom-in-up"
           data-aos-duration="1500"
           data-aos-easing="ease-in-out"
+          :items="1"
+          s
+          :nav="false"
+          :autoplay="true"
+          :autoplaySpeed="1000"
+          :loop="true"
         >
-          List Facility
-        </h2>
-        <div
-          class="big"
-          data-aos="fade-up"
-          data-aos-duration="1500"
-          data-aos-easing="ease-in-out"
-        >
-          <div class="row">
-            <div
-              v-for="items in facility"
-              :key="items.no"
-              class="col-12 col-xl-4 pr-2"
-              data-aos="fade-up"
-              data-aos-duration="1500"
-              data-aos-easing="ease-in-out"
-            >
-              <img :src="iconCheck" alt="logo-check" />{{ items.list }}
+          <img
+            class="image-homestay"
+            v-for="items in photos"
+            :key="items.no"
+            :src="items.photo"
+          />
+        </carousel>
+        <div class="container list">
+          <h2
+            data-aos="fade-down"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out"
+          >
+            List Facility
+          </h2>
+          <div
+            class="big"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out"
+          >
+            <div class="row">
+              <div
+                v-for="items in facility"
+                :key="items.no"
+                class="col-12 col-xl-4 pr-2"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+                data-aos-easing="ease-in-out"
+              >
+                <img :src="iconCheck" alt="logo-check" />{{ items.list }}
+              </div>
             </div>
           </div>
         </div>
