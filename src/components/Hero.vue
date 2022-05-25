@@ -27,10 +27,10 @@
             Klampok Karangasem Sendangtirto, Berbah, Sleman, DIY
           </p>
           <h3 class="d-none d-sm-block">
-            <img :src="dollar" alt="logo-dollar" />Rp.450.000 / night
+            <img :src="dollar" alt="logo-dollar" />Rp.500.000 / night
           </h3>
           <h3 class="d-block d-sm-none">
-            <img :src="dollarMobile" alt="logo-dollar" />Rp.450.000 / night
+            <img :src="dollarMobile" alt="logo-dollar" />Rp.500.000 / night
           </h3>
           <router-link to="/facilities" class="check btn btn-success"
             >Check for detail
